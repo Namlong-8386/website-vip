@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lumina AI — Chọn cổng game</title>
+  <link rel="icon" type="image/png" href="/src/assets/logo.png">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="home-body app-shell">
+  <!-- Băng chữ chạy -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>✦ CHỌN CỔNG GAME YÊU THÍCH</span><span>✦ NẠP RÚT NHANH 24/7</span><span>✦ HỖ TRỢ TẬN TÂM</span><span>✦ CHỌN CỔNG GAME YÊU THÍCH</span><span>✦ NẠP RÚT NHANH 24/7</span><span>✦ HỖ TRỢ TẬN TÂM</span>
+    </div>
+  </div>
+
+  <!-- ===== THANH TRÊN CÙNG ===== -->
+  <header class="topbar" id="topbar"></header>
+
+  <main class="home-main">
+    <!-- ===== CHÀO MỪNG ===== -->
+    <section class="home-hero">
+      <span class="lp-badge">✦ KHU VỰC THÀNH VIÊN</span>
+      <h1>CHỌN <span class="lp-highlight">CỔNG GAME</span> CỦA BẠN</h1>
+      <p class="lp-sub" id="home-greeting">Chào mừng bạn quay lại! Chọn một cổng game bên dưới để bắt đầu.</p>
+    </section>
+
+    <!-- ===== DANH SÁCH GAME ===== -->
+    <section class="home-games">
+      <div class="home-games-head">
+        <h2 class="lp-title home-games-title">TẤT CẢ CỔNG GAME</h2>
+        <span class="home-count" id="home-count">…</span>
+      </div>
+      <div class="home-grid" id="games-grid" aria-live="polite">
+        <p class="home-loading">Đang tải danh sách game…</p>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="lp-cta">
+      <div class="lp-cta-card">
+        <h2>CẦN HỖ TRỢ?</h2>
+        <p>Đội ngũ Lumina luôn sẵn sàng 24/7 qua Zalo và Telegram.</p>
+        <a href="/src/support.html" class="lp-btn lp-btn-yellow">Liên hệ ngay →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lp-footer">
+    <span>© 2025 Lumina AI — Made with ♥</span>
+    <div class="lp-footer-links">
+      <a href="/src/support.html">Hỗ trợ</a>
+      <a href="/">Trang chủ</a>
+    </div>
+  </footer>
+
+  <!-- ===== THANH DƯỚI CÙNG (dynamic) ===== -->
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
+
+<div class="toast" id="toast" role="status">
+    <span class="toast-icon">
+      <svg class="ic-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <svg class="ic-warn" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </span>
+    <span id="toast-msg"></span>
+  </div>
+
+  <!-- Overlay chuyển trang -->
+  <div class="page-transition" id="page-transition">
+    <div class="pt-spinner">
+      <div class="pt-double-bounce1"></div>
+      <div class="pt-double-bounce2"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/home.js"></script>
+</body>
+</html>

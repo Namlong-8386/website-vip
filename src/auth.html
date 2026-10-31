@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lumina AI — Đăng nhập & Đăng ký</title>
+  <link rel="icon" type="image/png" href="/src/assets/logo.png">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Băng chữ chạy -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>✦ LUMINA AI — CHÀO MỪNG BẠN</span><span>✦ TÀI KHOẢN MIỄN PHÍ</span><span>✦ BẢO MẬT TỐI ĐA</span><span>✦ LUMINA AI — CHÀO MỪNG BẠN</span><span>✦ TÀI KHOẢN MIỄN PHÍ</span><span>✦ BẢO MẬT TỐI ĐA</span>
+    </div>
+  </div>
+
+  <main class="stage">
+    <div class="sticker sticker-1">100% FREE</div>
+    <div class="sticker sticker-2">NEW ✦</div>
+
+    <section class="card">
+      <header class="brand">
+        <div class="brand-logo">
+          <img src="/src/assets/logo.png" alt="Lumina AI">
+        </div>
+        <div>
+          <h1 class="brand-name">LUMINA AI</h1>
+          <p class="brand-tag" id="greeting">Chào mừng trở lại 👋</p>
+        </div>
+        <span class="badge">v2.0</span>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Chọn hình thức">
+        <button type="button" class="tab active" data-tab="login" role="tab">Đăng nhập</button>
+        <button type="button" class="tab" data-tab="register" role="tab">Đăng ký</button>
+      </div>
+
+      <div class="panels">
+        <!-- ===== ĐĂNG NHẬP ===== -->
+        <section class="panel active" id="panel-login">
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" placeholder="you@example.com" autocomplete="email">
+              <p class="error"></p>
+            </div>
+
+            <div class="field">
+              <label for="login-password">Mật khẩu</label>
+              <div class="input-wrap">
+                <input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password">
+                <button type="button" class="eye" aria-label="Hiện mật khẩu">
+                  <svg class="i-eye" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg class="i-eye-off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                </button>
+              </div>
+              <p class="error"></p>
+            </div>
+
+            <div class="row">
+              <label class="remember">
+                <input type="checkbox" id="remember">
+                <span class="box"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Ghi nhớ
+              </label>
+              <a class="link" href="#">Quên mật khẩu?</a>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              <span class="btn-label">Đăng nhập →</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <div class="divider"><span>hoặc</span></div>
+
+          <div class="socials">
+            <button type="button" class="btn-social social-google" data-provider="Google">
+              <svg viewBox="0 0 24 24" width="19" height="19"><path fill="#EA4335" d="M12 5.04c1.7 0 3.23.59 4.43 1.74l3.3-3.3C17.73 1.64 15.09.5 12 .5 7.31.5 3.26 3.19 1.28 7.11l3.85 2.99C6.08 7.2 8.86 5.04 12 5.04z"/><path fill="#4285F4" d="M23.5 12.27c0-.85-.08-1.67-.22-2.46H12v4.65h6.46c-.28 1.5-1.13 2.77-2.4 3.62l3.72 2.89c2.17-2.01 3.72-4.97 3.72-8.7z"/><path fill="#FBBC05" d="M5.13 14.4a7.2 7.2 0 0 1-.38-2.4c0-.83.14-1.64.37-2.4L1.28 6.61A11.44 11.44 0 0 0 .5 12c0 1.94.46 3.77 1.28 5.39l3.35-2.99z"/><path fill="#34A853" d="M12 23.5c3.09 0 5.69-1.02 7.58-2.78l-3.72-2.89c-1.03.69-2.35 1.1-3.86 1.1-3.14 0-5.92-2.16-6.87-5.03l-3.85 2.99C3.26 20.81 7.31 23.5 12 23.5z"/></svg>
+              Google
+            </button>
+            <button type="button" class="btn-social social-facebook" data-provider="Facebook">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0 0 24 12z"/></svg>
+              Facebook
+            </button>
+          </div>
+        </section>
+
+        <!-- ===== ĐĂNG KÝ ===== -->
+        <section class="panel" id="panel-register">
+          <form id="register-form" novalidate>
+            <div class="field">
+              <label for="register-username">Tên đăng nhập</label>
+              <input type="text" id="register-username" placeholder="Tên đăng nhập" autocomplete="username">
+              <p class="error"></p>
+            </div>
+
+            <div class="field">
+              <label for="register-email">Email</label>
+              <input type="email" id="register-email" placeholder="you@example.com" autocomplete="email">
+              <p class="error"></p>
+            </div>
+
+            <div class="field">
+              <label for="register-password">Mật khẩu</label>
+              <div class="input-wrap">
+                <input type="password" id="register-password" placeholder="Tối thiểu 6 ký tự" autocomplete="new-password">
+                <button type="button" class="eye" aria-label="Hiện mật khẩu">
+                  <svg class="i-eye" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg class="i-eye-off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                </button>
+              </div>
+              <div class="strength" id="strength" data-level="0">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <p class="strength-text" id="strength-text"></p>
+              <p class="error"></p>
+            </div>
+
+            <div class="field">
+              <label for="register-confirm">Xác nhận mật khẩu</label>
+              <div class="input-wrap">
+                <input type="password" id="register-confirm" placeholder="Nhập lại mật khẩu" autocomplete="new-password">
+                <button type="button" class="eye" aria-label="Hiện mật khẩu">
+                  <svg class="i-eye" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg class="i-eye-off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                </button>
+              </div>
+              <p class="error"></p>
+            </div>
+
+            <label class="terms">
+              <input type="checkbox" id="terms">
+              <span class="box"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Tôi đồng ý với <a href="#">Điều khoản</a> & <a href="#">Chính sách bảo mật</a></span>
+            </label>
+
+            <button type="submit" class="btn-primary">
+              <span class="btn-label">
+                <span>Tạo tài khoản</span>
+                <svg class="btn-icon btn-icon-rocket" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path fill="#FF9DBB" d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                  <path fill="#7DE2D1" d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                  <path fill="#7DE2D1" d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                  <path fill="#FFFCF4" d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                  <circle cx="15.5" cy="8.5" r="1.6" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <div class="socials">
+            <button type="button" class="btn-social social-google" data-provider="Google">
+              <svg viewBox="0 0 24 24" width="19" height="19"><path fill="#EA4335" d="M12 5.04c1.7 0 3.23.59 4.43 1.74l3.3-3.3C17.73 1.64 15.09.5 12 .5 7.31.5 3.26 3.19 1.28 7.11l3.85 2.99C6.08 7.2 8.86 5.04 12 5.04z"/><path fill="#4285F4" d="M23.5 12.27c0-.85-.08-1.67-.22-2.46H12v4.65h6.46c-.28 1.5-1.13 2.77-2.4 3.62l3.72 2.89c2.17-2.01 3.72-4.97 3.72-8.7z"/><path fill="#FBBC05" d="M5.13 14.4a7.2 7.2 0 0 1-.38-2.4c0-.83.14-1.64.37-2.4L1.28 6.61A11.44 11.44 0 0 0 .5 12c0 1.94.46 3.77 1.28 5.39l3.35-2.99z"/><path fill="#34A853" d="M12 23.5c3.09 0 5.69-1.02 7.58-2.78l-3.72-2.89c-1.03.69-2.35 1.1-3.86 1.1-3.14 0-5.92-2.16-6.87-5.03l-3.85 2.99C3.26 20.81 7.31 23.5 12 23.5z"/></svg>
+              Google
+            </button>
+            <button type="button" class="btn-social social-facebook" data-provider="Facebook">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.47h-2.79v8.38A12 12 0 0 0 24 12z"/></svg>
+              Facebook
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <p class="footnote">© 2025 Lumina — Made with ♥</p>
+  </main>
+
+<div class="toast" id="toast" role="status">
+    <span class="toast-icon">
+      <svg class="ic-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <svg class="ic-warn" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </span>
+    <span id="toast-msg"></span>
+  </div>
+
+  <!-- Overlay chuyển trang -->
+  <div class="page-transition" id="page-transition">
+    <div class="pt-spinner">
+      <div class="pt-double-bounce1"></div>
+      <div class="pt-double-bounce2"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/auth.js"></script>
+</body>
+</html>

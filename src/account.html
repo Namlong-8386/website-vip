@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tài khoản — Lumina AI</title>
+  <link rel="icon" type="image/png" href="/src/assets/logo.png">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="app-shell">
+  <header class="topbar" id="topbar"></header>
+
+  <main class="home-main page-main">
+    <section class="page-head">
+      <h1 class="page-title">TÀI <span class="lp-highlight">KHOẢN</span></h1>
+      <p class="lp-sub">Thông tin thành viên và cài đặt cá nhân.</p>
+    </section>
+
+    <section class="profile-card">
+      <div class="profile-avatar" id="profile-avatar">U</div>
+      <div class="profile-info">
+        <strong class="profile-name" id="profile-name">…</strong>
+        <span class="profile-email" id="profile-email">…</span>
+      </div>
+      <span class="profile-role" id="profile-role">user</span>
+    </section>
+
+    <section class="page-section">
+      <h2 class="page-subtitle">Thống kê</h2>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-label">Số dư</span>
+          <strong class="stat-value" id="stat-balance">0 ₫</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Ngày tham gia</span>
+          <strong class="stat-value" id="stat-joined">—</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Đăng nhập</span>
+          <strong class="stat-value" id="stat-logins">0 lần</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Gói hiện tại</span>
+          <strong class="stat-value" id="stat-plan">Miễn phí</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2 class="page-subtitle">Cài đặt</h2>
+      <div class="menu-list">
+        <a href="/src/support.html" class="menu-item">
+          <span class="menu-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="2.5" y="13" width="4" height="7" rx="2"/><rect x="17.5" y="13" width="4" height="7" rx="2"/><path d="M20 20a3 3 0 0 1-3 2.5h-3"/></svg>
+          </span>
+          <span class="menu-text">Trung tâm hỗ trợ</span>
+          <span class="menu-arrow">→</span>
+        </a>
+        <a href="/src/deposit.html" class="menu-item">
+          <span class="menu-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8.5V6.5A2.5 2.5 0 0 0 17.5 4H5a2.5 2.5 0 0 0 0 5h15a1 1 0 0 1 1 1v8a2 2 0 0 1-2 2H5a2.5 2.5 0 0 1-2.5-2.5v-11"/></svg>
+          </span>
+          <span class="menu-text">Nạp tiền</span>
+          <span class="menu-arrow">→</span>
+        </a>
+        <a href="/src/plans.html" class="menu-item">
+          <span class="menu-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 21 7v10l-9 4.5L3 17V7z"/><path d="M3 7l9 4.5L21 7"/><path d="M12 11.5V21.5"/></svg>
+          </span>
+          <span class="menu-text">Mua gói dịch vụ</span>
+          <span class="menu-arrow">→</span>
+        </a>
+        <button type="button" class="menu-item menu-item-danger" id="btn-logout-page">
+          <span class="menu-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M17 8l4 4-4 4"/><path d="M21 12H9"/></svg>
+          </span>
+          <span class="menu-text">Đăng xuất</span>
+          <span class="menu-arrow">→</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Điều hướng chính"></nav>
+
+  <div class="toast" id="toast" role="status">
+    <span class="toast-icon">
+      <svg class="ic-check" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <svg class="ic-warn" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    </span>
+    <span id="toast-msg"></span>
+  </div>
+
+  <script type="module" src="/src/account.js"></script>
+</body>
+</html>
